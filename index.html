@@ -1,9 +1,205 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verizon Media Pixel Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f5f7;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    /* Header styling */
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+    }
+    .header .verizon {
+      color: #CD2028; /* Verizon red */
+    }
+    .header .media-pixel {
+      color: #FFD700; /* Yellow for Media Pixel, similar to Verizon logo accent */
+    }
+    .header .qa-tag {
+      font-size: 1.2em;
+      color: #333;
+      background-color: #FFD700;
+      padding: 5px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .jira-link {
+      font-size: 1.1em;
+      color: #0073e6;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+    .jira-link:hover {
+      border-bottom: 1px solid #0073e6;
+    }
+ 
+     /* Report sections */
+    .report-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .report-column {
+      width: 200px;
+    }
+    .report-column h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #f4f5f7;
+    }
+    .report-column a {
+      display: block;
+      color: #f4f5f7;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+    .report-column a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      font-size: 0.9em;
+      background-color: #e0f7fa;
+      color: #00796b;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 5px;
+      text-align: left;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+    }
+ 
+    /* Team table styling */
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 14px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #0073e6;
+      color: #fff;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Header with title and QA Tag -->
+  <div class="header">
+    <h1>
+      <span class="verizon">Verizon</span> <span class="media-pixel">Media Pixel</span>
+    </h1>
+    <div class="qa-tag">QA VIGIL</div>
+<a href="https://onejira.verizon.com/secure/Dashboard.jspa?selectPageId=280027#" class="jira-link" target="_blank">Jira Work Progress Dashboard</a>
+ <!-- Weekly report sections -->
+  <div class="report-section">
+    <!-- First set of weekly reports -->
+    <div class="report-column">
+      <h3> Page Visits- Weekly Reports</h3>
+      <a href="week1_report_1.html" target="_blank">Week 1 Report</a>
+      <a href="week2_report_1.html" target="_blank">Week 2 Report</a>
+      <a href="week3_report_1.html" target="_blank">Week 3 Report</a>
+      <a href="week4_report_1.html" target="_blank">Week 4 Report</a>
+    </div>
+    <!-- Second set of weekly reports -->
+    <div class="report-column">
+      <h3>3PT MultiStep- Weekly Reports</h3>
+      <a href="week1_report_2.html" target="_blank">Week 1 Report</a>
+      <a href="week2_report_2.html" target="_blank">Week 2 Report</a>
+      <a href="week3_report_2.html" target="_blank">Week 3 Report</a>
+      <a href="week4_report_2.html" target="_blank">Week 4 Report</a>
+    </div>
+  </div>
+      <div class="highlight">
+        <strong>Highlights:</strong><br>
+        - Increased coverage by 10%<br>
+        - 3 new issues identified<br>
+        - Stable performance overall<br>
+	  - Bing erformance overall<br>
+	  - wfedx performance overall
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Team table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Proficiency to Regression</th>
+        <th>Vendor</th>
+        <th>Email</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>New York</td>
+        <td>High</td>
+        <td>Vendor A</td>
+        <td>john.doe@example.com</td>
+        <td>johndoe</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Chicago</td>
+        <td>Medium</td>
+        <td>Vendor B</td>
+        <td>jane.smith@example.com</td>
+        <td>janesmith</td>
+      </tr>
+      <tr>
+        <td>Michael Brown</td>
+        <td>Los Angeles</td>
+        <td>Low</td>
+        <td>Vendor C</td>
+        <td>michael.brown@example.com</td>
+        <td>michaelbrown</td>
+      </tr>
+      <tr>
+        <td>Emily Davis</td>
+        <td>San Francisco</td>
+        <td>High</td>
+        <td>Vendor D</td>
+        <td>emily.davis@example.com</td>
+        <td>emilydavis</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</body>
 </html>
